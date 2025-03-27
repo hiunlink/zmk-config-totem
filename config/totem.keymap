@@ -59,6 +59,45 @@
         };
     };
 
+    behaviors {
+        jleft: j_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp LEFT>;
+            mods = <MOD_RSFT>;
+        };
+    };
+
+
+    behaviors {
+        lright: l_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp RIGHT>;
+            mods = <MOD_RSFT>;
+        };
+    };
+
+
+    behaviors {
+        uup: u_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp UP>;
+            mods = <MOD_RSFT>;
+        };
+    };
+
+
+    behaviors {
+        mdown: m_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp DOWN>;
+            mods = <MOD_RSFT>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -79,9 +118,9 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &kp A       &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &kp K       &kp L       &mt RGUI SEMI
-    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I          &kp O       &kp P
+                &kp A       &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &kp J       &mt RSHFT K    &kp L       &mt RGUI SEMI
+    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA      &kp DOT     &kp FSLH    &kp BSLH
                                         &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET   &lt SYM ESC   &kp BSPC
                         >;
                 };
