@@ -31,6 +31,36 @@
 };
 
 / {
+    behaviors {
+        jleft: j_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp LEFT>;
+            mods = <MOD_RSFT>;
+        };
+
+        lright: l_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp RIGHT>;
+            mods = <MOD_RSFT>;
+        };
+
+        uup: u_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp UP>;
+            mods = <MOD_RSFT>;
+        };
+
+        mdown: m_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp DOWN>;
+            mods = <MOD_RSFT>;
+        };
+    };
+
      combos {
             compatible = "zmk,combos";
             combo_esc {
@@ -56,45 +86,6 @@
                 , <&macro_release &kp LSHFT>
                 , <&macro_tap &kp G &kp I &kp F>
                 ;
-        };
-    };
-
-    behaviors {
-        jleft: j_left {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&kp LEFT>;
-            mods = <MOD_RSFT>;
-        };
-    };
-
-
-    behaviors {
-        lright: l_right {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp L>, <&kp RIGHT>;
-            mods = <MOD_RSFT>;
-        };
-    };
-
-
-    behaviors {
-        uup: u_up {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp U>, <&kp UP>;
-            mods = <MOD_RSFT>;
-        };
-    };
-
-
-    behaviors {
-        mdown: m_down {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp DOWN>;
-            mods = <MOD_RSFT>;
         };
     };
 
