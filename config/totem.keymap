@@ -59,6 +59,20 @@
             bindings = <&kp M>, <&kp DOWN>;
             mods = <MOD_RSFT>;
         };
+
+        ohome: o_home {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp HOME>;
+            mods = <MOD_RSFT>;
+        };
+
+        dotend: dot_end {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp END>;
+            mods = <MOD_RSFT>;
+        };
     };
 
      combos {
@@ -152,19 +166,19 @@ label= "SYM"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     *     ┃     '     ┃     "     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    F8     ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃   ┃   MUTE    ┃    F7     ┃    F8     ┃     =     ┃     _     ┃
+//             ┃    F8     ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃   ┃     =     ┃     _     ┃           ┃     '     ┃     "     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
+// ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃   ┃   VOL-    ┃   VOL+    ┃   PGUP    ┃   PGDN    ┃     \     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp KP_MULTIPLY     &kp SQT     &kp DQT       
-                &kp F8      &kp F9      &kp F10      &kp F11    &kp F12         &kp C_MUTE  &kp F7      &kp F8              &kp EQUAL   &kp UNDERSCORE
-    &trans      &kp F1      &kp F2      &kp F3       &kp F4     &kp F5          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp BSLH   &trans         
-                                        &trans      &gif        &mo ADJ         &trans      &kp C_PP    &trans      
+                &kp F8      &kp F9      &kp F10      &kp F11    &kp F12         &kp EQUAL   &kp UNDERSCORE      &kp trans    &kp SQT     &kp DQT            
+    &trans      &kp F1      &kp F2      &kp F3       &kp F4     &kp F5          &kp C_VOL_DN &kp C_VOL_UP &kp PG_UP &kp PG_DN  &kp BSLH   &trans         
+                                        &trans       &trans     &trans          &trans      &trans    &trans      
                         >;
                 };
 
