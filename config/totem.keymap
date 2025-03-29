@@ -177,7 +177,7 @@ label= "SYM"                               ;
 
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp KP_MULTIPLY     &kp SQT     &kp DQT       
                 &kp F8      &kp F9      &kp F10      &kp F11    &kp F12         &kp EQUAL   &kp UNDERSCORE      &trans      &kp SQT     &kp DQT            
-    &trans      &kp F1      &kp F2      &kp F3       &kp F4     &kp F5          &kp C_VOL_DN &kp C_VOL_UP &kp PG_UP &kp PG_DN  &kp BSLH   &trans         
+    &trans      &kp F1      &kp F2      &kp F3       &kp F4     &kp F5          &kp PLUS    &kp MINUS   &kp PG_UP &kp PG_DN  &kp BSLH   &trans         
                                         &trans       &trans     &trans          &trans      &trans    &trans      
                         >;
                 };
