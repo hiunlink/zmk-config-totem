@@ -36,42 +36,42 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp LEFT>;
-            mods = <MOD_RSFT>;
+            mods = <MOD_RCTL>;
         };
 
         lright: l_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp RIGHT>;
-            mods = <MOD_RSFT>;
+            mods = <MOD_RCTL>;
         };
 
         uup: u_up {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp U>, <&kp UP>;
-            mods = <MOD_RSFT>;
+            mods = <MOD_RCTL>;
         };
 
         mdown: m_down {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp DOWN>;
-            mods = <MOD_RSFT>;
+            mods = <MOD_RCTL>;
         };
 
         ohome: o_home {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp HOME>;
-            mods = <MOD_RSFT>;
+            mods = <MOD_RCTL>;
         };
 
         pend: p_end {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp END>;
-            mods = <MOD_RSFT>;
+            mods = <MOD_RCTL>;
         };
     };
 
@@ -124,8 +124,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &uup        &kp I          &ohome       &pend
-                &kp A       &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &jleft      &mt RSHFT K    &lright      &mt RGUI SEMI
-    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &mdown      &kp COMMA      &kp DOT      &kp FSLH    &kp BSLH
+                &kp A       &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &jleft      &mt RCTRL K    &lright      &mt RGUI SEMI
+    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &mdown      &kp COMMA      &kp DOT      &mt RSHFT FSLH    &kp BSLH
                                         &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET   &lt SYM ESC   &kp BSPC
                         >;
                 };
@@ -168,7 +168,7 @@ label= "SYM"                               ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃    F8     ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃   ┃     =     ┃     _     ┃           ┃     '     ┃     "     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃   ┃     +     ┃     -     ┃   PGUP    ┃   PGDN    ┃     \     ┃           ┃
+// ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃   ┃     +     ┃     -     ┃   PGUP    ┃   PGDN    ┃     ?     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -177,7 +177,7 @@ label= "SYM"                               ;
 
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp KP_MULTIPLY     &kp SQT     &kp DQT       
                 &kp F8      &kp F9      &kp F10      &kp F11    &kp F12         &kp EQUAL   &kp UNDERSCORE      &trans      &kp SQT     &kp DQT            
-    &trans      &kp F1      &kp F2      &kp F3       &kp F4     &kp F5          &kp PLUS    &kp MINUS   &kp PG_UP &kp PG_DN  &kp BSLH   &trans         
+    &trans      &kp F1      &kp F2      &kp F3       &kp F4     &kp F5          &kp PLUS    &kp MINUS   &kp PG_UP &kp PG_DN  &kp QMARK   &trans         
                                         &trans       &trans     &trans          &trans      &trans    &trans      
                         >;
                 };
