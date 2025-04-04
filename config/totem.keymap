@@ -150,9 +150,9 @@ label= "NAVI"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp N1      &kp N2       &kp N3     &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
-                &kp trans   &kp trans    &kp trans  &kp trans   &kp F7          &kp PLUS    &kp MINUS   &kp trans   &kp LBKT    &kp RBKT
-    &kp trans   &kp trans   &kp trans    &kp trans  &kp trans   &kp F6          &kp trans   &kp trans   &kp trans   &kp trans   &kp trans  &kp trans      
-                                         &trans     &trans      &trans          &kp DEL     &kp trans   &trans      
+                &trans      &trans       &trans     &trans      &kp F7          &kp PLUS    &kp MINUS   &trans      &kp LBKT    &kp RBKT
+    &trans      &trans      &trans       &trans     &trans      &kp F6          &trans      &trans      &trans      &trans      &trans      &trans      
+                                         &trans     &trans      &trans          &kp DEL     &trans      
                         >;
                 };
 
@@ -177,8 +177,8 @@ label= "SYM"                               ;
 
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS        &kp KP_MULTIPLY   &kp LPAR    &kp RPAR        
                 &kp F8      &kp F9      &kp F10     &kp F11     &kp F12         &kp EQUAL   &kp UNDERSCORE  &trans            &kp LBRC    &kp RBRC            
-    &trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp trans   &kp trans       &kp LT            &kp GT  &kp QMARK   &kp PIPE         
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+    &trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &trans      &trans       &kp LT               &kp GT  &kp QMARK   &kp PIPE         
+                                        &trans      &trans      &trans          &trans      &trans       &trans      
                         >;
                 };
 
