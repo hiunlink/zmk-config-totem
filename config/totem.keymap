@@ -138,21 +138,21 @@ label= "BASE"                              ;
 label= "NAVI"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃    F6     ┃    F7     ┃    F8     ┃     _     ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
+//             ┃     1     ┃     2     ┃     3     ┃     4     ┃     5     ┃   ┃     6     ┃     7     ┃     8     ┃     9     ┃     0     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
+//             ┃           ┃           ┃           ┃           ┃    F7     ┃   ┃     +     ┃     -     ┃           ┃     [     ┃     ]     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     *     ┃     =     ┃
+// ┃           ┃           ┃           ┃           ┃           ┃    F6     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    DEL    ┃     0     ┃           ┃
+//                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    DEL    ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp F6      &kp F7       &kp F8     &kp UNDERSCORE   &kp LBRC        &kp RBRC    &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS
-                &kp F9      &kp F10      &kp F11    &kp F12     &kp LBKT        &kp RBKT    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS
-    &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &kp LPAR        &kp RPAR    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MULTIPLY  &kp EQUAL      
-                                        &trans      &trans      &trans          &kp DEL     &kp KP_N0   &trans      
+                &kp N1      &kp N2       &kp N3     &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
+                &kp trans   &kp trans    &kp trans  &kp trans   &kp F7          &kp PLUS    &kp MINUS   &kp trans   &kp LBKT    &kp RBKT
+    &kp trans   &kp trans   &kp trans    &kp trans  &kp trans   &kp F6          &kp trans   &kp trans   &kp trans   &kp trans   &kp trans  &kp trans      
+                                         &trans     &trans      &trans          &kp DEL     &kp trans   &trans      
                         >;
                 };
 
@@ -175,10 +175,10 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS        &kp KP_MULTIPLY     &kp LPAR    &kp RPAR        
-                &kp F8      &kp F9      &kp F10      &kp F11    &kp F12         &kp EQUAL   &kp UNDERSCORE  &trans              &kp LBRC     &kp RBRC            
-    &trans      &kp F1      &kp F2      &kp F3       &kp F4     &kp F5          &kp PLUS    &kp MINUS       &kp LT              &kp GT  &kp QMARK   &kp PIPE         
-                                        &trans       &trans     &trans          &trans      &trans    &trans      
+                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS        &kp KP_MULTIPLY   &kp LPAR    &kp RPAR        
+                &kp F8      &kp F9      &kp F10     &kp F11     &kp F12         &kp EQUAL   &kp UNDERSCORE  &trans            &kp LBRC    &kp RBRC            
+    &trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp trans   &kp trans       &kp LT            &kp GT  &kp QMARK   &kp PIPE         
+                                        &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
 
