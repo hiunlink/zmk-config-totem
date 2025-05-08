@@ -124,8 +124,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &uup        &kp I          &ohome       &pend
-                &kp A       &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &jleft      &mt RCTRL K    &lright      &mt RGUI SEMI
-    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &mdown      &kp COMMA      &kp DOT      &mt RSHFT FSLH    &kp BSLH
+                &kp A       &mt LALT S  &mt LCTRL D &kp F       &kp G           &kp H       &jleft      &mt RCTRL K    &lright      &mt RGUI SEMI
+    &kp LSHFT   &mt LSHFT Z &kp X       &kp C       &kp V       &kp B           &kp N       &mdown      &kp COMMA      &kp DOT      &mt RSHFT FSLH    &kp BSLH
                                         &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET   &lt SYM ESC   &kp BSPC
                         >;
                 };
